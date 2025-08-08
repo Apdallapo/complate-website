@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(14, 12, 10);
+  color: #ccc;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+body {
+  background-color:white;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1rem;
+  padding: 1.5rem;
+  transition: 0.4s ease;
+}
+
+.nav-links a:hover {
+  color: #f05705d5;
+}
+
+.nav-links a::after {
+  position: absolute;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  background-color: rgb(21, 96, 72);
+  transition: 0.4s;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero h2 {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: #141c01;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.hero-container {
+  padding: 40px;
+  padding-top: 20px;
+  margin-top: 0;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+width: 35%;
+background-color: rgb(241, 244, 243);
+}
+.btn{
+padding: 10px;
+margin-top: 15px;
+background-color:rgb(255, 227, 43);
+border-radius: 20px;
+font-weight: bold;
+border: 1px solid wheat;
+transition: 0.4s ease;
+font-weight: bold;
+}
+
+.btn:hover{
+  background-color: rgb(235, 206, 20);
+  font-weight: bold;
+}
+.imge{
+  margin-top: 1.2rem;
+  height: 230px;
+  width: 350px ;
+}
+html{
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px){
+body{
+  background-color: honeydew;
+}
+.nav-links{
+  max-width: 500px;
+}
+img{
+  width: 100%;
+  height: auto;
+
+}
+}
+@media (min-width: 600px){
+body{
+  background-color:wheat;
+}  
+
+  }
+@media (min-width: 768px){
+body{
+  background-color: rgb(165, 171, 161);
+}
+}
+@media (min-width: 1000px){
+body{
+  background-color: rgba(231, 250, 250, 0.331);
+}
+}
+.img{
+  height:98vh;
+width: 100%;
+}
+.About-section{
+  max-width: 1200px;
+  padding: 1rem 1.30rem;
+  display: flex;
+  justify-content: center;
+}
+.About  h1{
+  text-align: center;
+padding: 1rem;
+margin-top: 4%;
+font-size: 2rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+}
+.About-section  h3{
+  font-family: sans-serif;
+  color: rgb(34, 19, 1);
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.About-section .about{
+height: 100vh;
+padding: 0 2rem;
+}
+
+.about{
+  font-size: 20px;
+  font-family: monospace;
+  padding: 2rem;
+}
+
+
+.menu-section{
+text-align: center;
+height: 100%;
+}
+.menu-container{
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: auto;
+  height: 50vh;
+}
+ .menu-items{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr)); 
+  gap: 2rem;
+}
+.menu-card{
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem 0.5rem 1rem;
+ overflow: hidden;
+ box-shadow: 0 5px 15px rgb(0, 0, 0,0.1);
+  border-radius: 10px;
+}
+.menu-card img{
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+.menu-card h3{
+  padding: 10px;
+  margin: auto;
+  color: darkgoldenrod;
+}
+.menu-container h2{
+  padding: 4rem;
+  margin-top: 10rem;
+font-weight: bold;
+font-size: 2rem;
+}
+
+
+.gellary-section{
+ text-align: center; 
+height: 100%;
+}
+ .gellary-container{
+  max-width: 1200px;
+  margin: auto;
+  height: 70vh;
+ 
+}
+  .gellary-card{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr)); 
+  gap: 2rem;
+} 
+ .gellary-items{
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 1rem 0.5rem 1rem;
+ overflow: hidden;
+ box-shadow: 0 5px 15px rgb(0, 0, 0,0.1);
+  border-radius: 10px;
+}
+  .gellary-card img{
+width: 100%;
+  object-fit: cover;
+  height: 180px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}  
+.gellary-container h2{
+  padding: 4rem;
+  margin-top: 20%;
+font-weight: bold;
+font-size: 2rem;
+}
+.Contact-section{
+   text-align: center; 
+height: 100%;
+}
+.Contact-container{
+max-width: 1200px;
+  padding: 1.5rem;
+  margin: 20px;
+  height: 80vh;
+}
+.contactForm{
+padding: 1rem;
+
+}
+.contactForm input {
+  padding: 10px;
+  width: 350px;
+  margin-top: 2%;
+
+}
+.Contact-container h2{
+
+  margin-top: -2.5%;
+font-weight: bold;
+font-size: 2rem;
+}
+#description{
+  padding: 5px;
+  width: 350px;
+  margin-top: 2%;
+}
+.btnr{
+  width: 350px;
+  padding: 7px;
+  border: #a59f9f;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: rgb(255, 227, 43);
+  transition: 0.4s ease;
+  font-weight: bold;
+}
+.btnr:hover{
+  background-color: rgb(235, 206, 20);
+  font-weight: bold;
+}
+footer{
+  text-align: center;
+}
